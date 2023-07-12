@@ -1,3 +1,10 @@
 {
-  "blogs": []
+  "blogs": [
+    {
+      "id": "779c79f6-955a-4192-b8e7-49a4608ffc8e",
+      "title": "Video Straming",
+      "author": "Sahil Marshiya",
+      "content": "this is for the streaming videos"
+    }
+  ]
 }
