@@ -1,0 +1,15 @@
+<div id="outerdev" class="col-sm-6 mx-auto container my-3 align-item-center">
+    <h3>{{ blog?.title }}</h3>
+    <div class="card mb-3 bg-warning p-3">
+        <p>{{ blog?.author }}</p>
+        <p>{{ blog?.content }}</p>
+        <div>
+            <button class="btn btn-primary" [routerLink]="['/editblog', blog?.id]">Edit</button>
+
+            <button class="btn btn-danger mx-3" (click)="deleteFunc(blog?.id)">Delete</button>
+
+        </div>
+
+    </div>
+    <br />
+</div>

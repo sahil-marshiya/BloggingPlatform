@@ -1,0 +1,23 @@
+<div class="col-sm-6 mx-auto">
+  <div class="container center" align="center">
+    <h3>Edit your posts here...</h3>
+  </div>
+  <form class="container" [formGroup]="editBlog" *ngIf="blog">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Blog Title</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        formControlName="title" value="{{ blog?.title }}">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Author</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="author"
+        value="{{ blog?.author }}">
+    </div>
+    <div class="form-group">
+      <label for="content">Content</label>
+      <textarea class="form-control" id="content" formControlName="content"
+        style="height: 150px">{{ blog?.content }}</textarea>
+    </div>
+    <button type="submit" (click)="onSubmit()" class="btn btn-primary">Submit</button>
+  </form>
+</div>
